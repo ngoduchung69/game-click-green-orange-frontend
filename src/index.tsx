@@ -15,11 +15,11 @@ import { getMainDefinition } from "@apollo/client/utilities";
 import "antd/dist/antd.css";
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:3000/graphql",
+  uri: "http://localhost:3001/graphql",
 });
 
 const wsLink = new WebSocketLink({
-  uri: "ws://localhost:3000/graphql",
+  uri: "ws://localhost:3001/graphql",
   options: {
     reconnect: true,
   },
